@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Stoehatch]">
+  <test thread-count="5" name="demotest(failed)">
+    <classes>
+      <class name="stonehatch.TestStonehatch">
+        <methods>
+          <include name="AppLunch"/>
+          <include name="ShLogin"/>
+          <include name="Closebrowser"/>
+        </methods>
+      </class> <!-- stonehatch.TestStonehatch -->
+    </classes>
+  </test> <!-- demotest(failed) -->
+</suite> <!-- Failed suite [Stoehatch] -->

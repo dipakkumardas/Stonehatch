@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Stoehatch" verbose="1" >
+ <test name="demotest" >
+   <classes>
+   <class name="stonehatch.TestStonehatch"/>
+   </classes>
+   
+ </test>
+ 
+ 
+ 
+
+
+</suite>

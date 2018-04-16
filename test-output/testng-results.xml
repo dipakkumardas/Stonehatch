@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Stoehatch" duration-ms="107415" started-at="2018-04-12T14:14:34Z" finished-at="2018-04-12T14:16:22Z">
+    <groups>
+    </groups>
+    <test name="demotest" duration-ms="107415" started-at="2018-04-12T14:14:34Z" finished-at="2018-04-12T14:16:22Z">
+      <class name="stonehatch.TestStonehatch">
+        <test-method status="PASS" signature="AppLunch()[pri:0, instance:stonehatch.TestStonehatch@14e1a0f]" name="AppLunch" is-config="true" duration-ms="7968" started-at="2018-04-12T14:14:34Z" finished-at="2018-04-12T14:14:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppLunch -->
+        <test-method status="PASS" signature="ShLogin()[pri:1, instance:stonehatch.TestStonehatch@14e1a0f]" name="ShLogin" duration-ms="97115" started-at="2018-04-12T14:14:42Z" finished-at="2018-04-12T14:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShLogin -->
+        <test-method status="PASS" signature="Closebrowser()[pri:0, instance:stonehatch.TestStonehatch@14e1a0f]" name="Closebrowser" is-config="true" duration-ms="2312" started-at="2018-04-12T14:16:20Z" finished-at="2018-04-12T14:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closebrowser -->
+      </class> <!-- stonehatch.TestStonehatch -->
+    </test> <!-- demotest -->
+  </suite> <!-- Stoehatch -->
+</testng-results>
