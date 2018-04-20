@@ -22,7 +22,7 @@ public class Allmethods
 	
 	public static ChromeDriver Driver;
 	public static String quotenumber;
-	
+	//AllWait obj1 = new AllWait();
 	
 		
 	
@@ -70,11 +70,17 @@ public static void Agentdetails() throws InterruptedException, IOException
 		
 		  
 		 WebDriverWait wait = new WebDriverWait(Driver,90);
-		wait.until(ExpectedConditions.invisibilityOf(Driver.findElement(By.xpath("//*[@id='preloader']"))));
+		 //int Time = 90;
+		// WebElement A = Driver.findElement(By.xpath("//*[@id='preloader']"));
+		 AllWait.waitExplicitly(Driver, By.xpath("//*[@id='preloader']"), "ioe", 90);
+		 
+		//wait.until(ExpectedConditions.invisibilityOf(Driver.findElement(By.xpath("//*[@id='preloader']"))));
 		
 		//Click New Quote
 		// Thread.sleep(4000);
 		 Driver.findElement(By.linkText("New Quote Request")).click();
+		 
+		 
 		 wait.until(ExpectedConditions.invisibilityOf(Driver.findElement(By.xpath("//*[@id='preloader']"))));
 		 Driver.findElement(By.xpath("//*[@id='organisation']")).sendKeys("Stonehatch New Testing Company");
 		 Driver.findElement(By.xpath("//*[@id='insured_house']")).sendKeys("45 AB Housing");
@@ -91,6 +97,8 @@ public static void Agentdetails() throws InterruptedException, IOException
 
 		 Driver.findElement(By.xpath("//*[@id='calclassSd']/i")).click();
 		 Thread.sleep(2000);
+		 
+		 
 		 Driver.findElement(By.xpath("//*[@id='ui-datepicker-div']/table/tbody/tr[3]/td[5]/a")).click();
 		 
 		Driver.switchTo().defaultContent();
@@ -342,8 +350,7 @@ public static void Agentdetails() throws InterruptedException, IOException
 		for(WebElement facility:allfacility)
 		{
 	    
-	    
-		String facilitytext=facility.getText();
+	    String facilitytext=facility.getText();
 		
 		//System.out.println(facilitytext);
 
@@ -371,8 +378,10 @@ public static void Agentdetails() throws InterruptedException, IOException
 		
 	
 	}
-	
 	 
 	
-}
+	}
+	 
+	
+
 
